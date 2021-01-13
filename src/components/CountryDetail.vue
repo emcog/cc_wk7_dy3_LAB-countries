@@ -1,6 +1,5 @@
 <template lang="html">
-  <div v-if="country">
-    <span>Bananas</span>
+  <div class="country-details" v-if="country">
     <h2>{{ country.name }}</h2>
     <span>{{ country.capital }}</span>
     <span>{{ country.population }}</span>
@@ -15,5 +14,7 @@ export default {
 </script>
 
 <style>
-
+  .country-detail {
+    float: right;
+  }
 </style>
