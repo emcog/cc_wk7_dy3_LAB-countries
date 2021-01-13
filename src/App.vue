@@ -1,7 +1,8 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="html">
+  <div class="main-container">
+    <h1>Hello</h1>
+    <countries-list :countries="countries"></countries-list>
+    <country-detail :country="selectedCountry"></country-detail>
   </div>
 </template>
 
@@ -15,7 +16,8 @@ export default {
   name: 'app',
   data(){
     return {
-      countries: []
+      countries: [],
+      selectedCountry: null
     }
   },
   mounted(){
